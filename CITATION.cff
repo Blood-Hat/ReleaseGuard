@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this student research prototype, cite the repository and the upstream OWASP Benchmark dataset."
+title: "ReleaseGuard: An Explainable Machine-Learning Framework for Pre-Release Software Vulnerability and Reliability Assessment"
+type: software
+authors:
+  - family-names: Chowdhury
+    given-names: Abhra
+version: 0.1.0

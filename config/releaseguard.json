@@ -1,0 +1,19 @@
+{
+  "thresholds": {
+    "max_critical": 0,
+    "max_high": 0,
+    "min_security_score": 70.0,
+    "min_maintainability_score": 60.0,
+    "min_reliability_score": 60.0,
+    "max_remaining_faults": 5.0,
+    "min_model_r_squared": 0.75,
+    "require_reliability_data": true,
+    "max_ml_high_risk_files": 0,
+    "ml_high_risk_probability": 0.65
+  },
+  "weights": {
+    "security": 0.5,
+    "maintainability": 0.2,
+    "reliability": 0.3
+  }
+}

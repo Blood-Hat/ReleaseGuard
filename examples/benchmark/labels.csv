@@ -1,0 +1,10 @@
+path,label
+vulnerable/VulnerableLogin.java,1
+vulnerable/WeakCrypto.java,1
+vulnerable/CommandRunner.java,1
+vulnerable/UnsafeDeserializer.java,1
+safe/SafeLogin.java,0
+safe/StrongCrypto.java,0
+safe/SafeProcess.java,0
+safe/SafeParser.java,0
+

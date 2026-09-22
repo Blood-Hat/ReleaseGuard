@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "releaseguard"
+version = "0.1.0"
+description = "Explainable pre-release vulnerability and reliability assessment for Java projects"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Abhra Chowdhury" }]
+keywords = ["software reliability", "vulnerability detection", "release gate", "static analysis"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Security",
+]
+
+[project.scripts]
+releaseguard = "releaseguard.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["releaseguard*"]
+

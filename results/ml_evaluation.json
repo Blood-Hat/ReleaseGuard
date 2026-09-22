@@ -1,0 +1,173 @@
+{
+  "dataset": "datasets/processed/owasp_features.csv",
+  "samples": 2740,
+  "class_distribution": {
+    "vulnerable": 1415,
+    "non_vulnerable": 1325
+  },
+  "cross_validation_folds": 5,
+  "models": {
+    "logistic_regression": {
+      "accuracy": 0.655474,
+      "precision": 0.669087,
+      "recall": 0.660777,
+      "specificity": 0.649811,
+      "balanced_accuracy": 0.655294,
+      "f1": 0.66435,
+      "folds": [
+        {
+          "accuracy": 0.64781,
+          "precision": 0.646104,
+          "recall": 0.70318,
+          "specificity": 0.588679,
+          "balanced_accuracy": 0.64593,
+          "f1": 0.673435,
+          "confusion_matrix": {
+            "tp": 199,
+            "tn": 156,
+            "fp": 109,
+            "fn": 84
+          }
+        },
+        {
+          "accuracy": 0.635036,
+          "precision": 0.646643,
+          "recall": 0.646643,
+          "specificity": 0.622642,
+          "balanced_accuracy": 0.634642,
+          "f1": 0.646643,
+          "confusion_matrix": {
+            "tp": 183,
+            "tn": 165,
+            "fp": 100,
+            "fn": 100
+          }
+        },
+        {
+          "accuracy": 0.680657,
+          "precision": 0.694245,
+          "recall": 0.681979,
+          "specificity": 0.679245,
+          "balanced_accuracy": 0.680612,
+          "f1": 0.688057,
+          "confusion_matrix": {
+            "tp": 193,
+            "tn": 180,
+            "fp": 85,
+            "fn": 90
+          }
+        },
+        {
+          "accuracy": 0.65146,
+          "precision": 0.678295,
+          "recall": 0.618375,
+          "specificity": 0.686792,
+          "balanced_accuracy": 0.652584,
+          "f1": 0.64695,
+          "confusion_matrix": {
+            "tp": 175,
+            "tn": 182,
+            "fp": 83,
+            "fn": 108
+          }
+        },
+        {
+          "accuracy": 0.662409,
+          "precision": 0.680147,
+          "recall": 0.65371,
+          "specificity": 0.671698,
+          "balanced_accuracy": 0.662704,
+          "f1": 0.666667,
+          "confusion_matrix": {
+            "tp": 185,
+            "tn": 178,
+            "fp": 87,
+            "fn": 98
+          }
+        }
+      ]
+    },
+    "gaussian_naive_bayes": {
+      "accuracy": 0.54854,
+      "precision": 0.581825,
+      "recall": 0.438163,
+      "specificity": 0.666415,
+      "balanced_accuracy": 0.552289,
+      "f1": 0.492432,
+      "folds": [
+        {
+          "accuracy": 0.543796,
+          "precision": 0.566265,
+          "recall": 0.498233,
+          "specificity": 0.592453,
+          "balanced_accuracy": 0.545343,
+          "f1": 0.530075,
+          "confusion_matrix": {
+            "tp": 141,
+            "tn": 157,
+            "fp": 108,
+            "fn": 142
+          }
+        },
+        {
+          "accuracy": 0.567518,
+          "precision": 0.61165,
+          "recall": 0.44523,
+          "specificity": 0.698113,
+          "balanced_accuracy": 0.571671,
+          "f1": 0.515337,
+          "confusion_matrix": {
+            "tp": 126,
+            "tn": 185,
+            "fp": 80,
+            "fn": 157
+          }
+        },
+        {
+          "accuracy": 0.587591,
+          "precision": 0.59727,
+          "recall": 0.618375,
+          "specificity": 0.554717,
+          "balanced_accuracy": 0.586546,
+          "f1": 0.607639,
+          "confusion_matrix": {
+            "tp": 175,
+            "tn": 147,
+            "fp": 118,
+            "fn": 108
+          }
+        },
+        {
+          "accuracy": 0.525547,
+          "precision": 0.574194,
+          "recall": 0.314488,
+          "specificity": 0.750943,
+          "balanced_accuracy": 0.532716,
+          "f1": 0.406393,
+          "confusion_matrix": {
+            "tp": 89,
+            "tn": 199,
+            "fp": 66,
+            "fn": 194
+          }
+        },
+        {
+          "accuracy": 0.518248,
+          "precision": 0.559748,
+          "recall": 0.314488,
+          "specificity": 0.735849,
+          "balanced_accuracy": 0.525168,
+          "f1": 0.402715,
+          "confusion_matrix": {
+            "tp": 89,
+            "tn": 195,
+            "fp": 70,
+            "fn": 194
+          }
+        }
+      ]
+    }
+  },
+  "selected_model": "logistic_regression",
+  "interpretation": "Metrics are cross-validated estimates on the supplied labelled dataset, not guarantees on unrelated production code."
+}
